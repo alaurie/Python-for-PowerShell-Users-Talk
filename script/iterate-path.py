@@ -3,6 +3,7 @@
 # Imports
 from pathlib import Path
 import argparse
+import zipfile
 
 # Parameters
 args_parser = argparse.ArgumentParser(
@@ -11,7 +12,7 @@ args_parser = argparse.ArgumentParser(
 
 args_parser.add_argument(
     "directory",
-    metavar="/my/directory",
+    metavar="search/this/directory",
     type=str,
     help="Enter directory to be searched.",
 )
@@ -19,7 +20,7 @@ args_parser.add_argument(
 args_parser.add_argument(
     "-p",
     "--print",
-    type=bool,
+    action="store_true",
     help="Print found list of directories and files.",
     required=False,
 )
@@ -33,7 +34,7 @@ files = []
 # Functions
 def iterate_directory(search_path):
     """Iterates through directory and adds found files or directories to their respective lists"""
-    all_path_objects = search_path.rglob("*")
+    all_path_objects = search_path.glob("*")
     for path_object in all_path_objects:
         if path_object.is_dir():
             directories.append(path_object)
@@ -51,10 +52,10 @@ if __name__ == "__main__":
             print("Here is a list of files found.")
             print(*files, sep="\n")
         else:
-            print("No files found.")
+            print("No files found to print.")
 
         if len(directories) != 0:
             print("Here is a list of directories found.")
             print(*directories, sep="\n")
         else:
-            print("No directories found.")
+            print("No directories found to print.")

@@ -7,7 +7,7 @@ from rich.console import Console
 
 args_parser = argparse.ArgumentParser(
     prog="dns-check",
-    description="Searches DNS for A,CNAME,MX,TXT,AAAA and SRV records for the specified FQDN.",
+    description="Searches DNS for A, CNAME, MX, TXT, AAAA and SRV records for the specified FQDN.",
 )
 
 args_parser.add_argument(
