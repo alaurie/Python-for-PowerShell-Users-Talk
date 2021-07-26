@@ -26,8 +26,6 @@ args_parser.add_argument(
     required=False,
 )
 
-args = args_parser.parse_args()
-
 
 def get_records(domain):
     record_types = [
@@ -60,4 +58,5 @@ def get_records(domain):
 
 
 if __name__ == "__main__":
+    args = args_parser.parse_args()
     get_records(args.domain)
