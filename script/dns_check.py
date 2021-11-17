@@ -43,8 +43,8 @@ def get_records(domain):
     table.add_column("Value")
     for record in record_types:
         try:
+            resolver = dns.resolver
             if args.nameserver:
-                resolver = dns.resolver
                 resolver.nameservers = [args.nameserver]
             else:
                 resolver = dns.resolver

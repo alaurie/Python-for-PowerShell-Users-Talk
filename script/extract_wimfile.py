@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-import pycdlib
 import argparse
 from pathlib import Path
+import pycdlib
+
 
 arg_parser = argparse.ArgumentParser(
     prog="extract-wimfile", description="Extract install.wim from Windows 10 ISO."

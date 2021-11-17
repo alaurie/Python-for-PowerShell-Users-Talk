@@ -32,8 +32,8 @@ files = []
 def search_directory(search_path):
     """Iterates through a directory and adds found files and dirs"""
     all_path_objects = search_path.glob("*")
-    for object in all_path_objects:
-        if object.is_dir():
+    for path_object in all_path_objects:
+        if path_object.is_dir():
             directories.append(object)
         else:
             files.append(object)
