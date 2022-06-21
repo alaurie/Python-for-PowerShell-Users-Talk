@@ -42,7 +42,7 @@ Python programs are whitespace indented and have the file extension .PY
 ## Follow up reading
 
 - Common packages: Requests, Pandas, Rich, JupyterLab, PyTest
-- [RealPython](www.realpython.com)
+- [RealPython](https://realpython.com/)
 - [Practical Business Python](https://pbpython.com/)
 - [Hitchikers Guide to Python](https://docs.python-guide.org/)
 - [Python Docs](https://docs.python.org/3/)
