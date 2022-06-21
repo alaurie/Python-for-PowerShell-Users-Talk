@@ -1,20 +1,29 @@
 # Python for PowerShell Users
-## What is Python
-Python is a whitespace indented programming language
 
-## Install Python
-- Download Python Windows amd64
+## What is Python
+
+[Python](www.python.org) is an open source interpreted programming language with dynamic typing created in 1991 by Guido Van Rossum. Used in Web, System, Desktop, DataScience and IOT devices.
+
+Python programs are whitespace indented and have the file extension .PY
+## Installation
+
 - Install Python
-- Setup .PY executable env module
-- Pip install Black, Pylint, Requests
+  - [Windows](https://www.python.org/downloads/)
+  - [PyEnv](https://github.com/pyenv/pyenv)
+- Setup .PY executable env variable
+- Set python as the executable when calling .PY files
+- Pip install [Black](https://pypi.org/project/black/)
+- Pip install [Pylint](https://pypi.org/project/pylint/)
 
 ## Setup VSCode
-- Install Python extension
+
+- Install [Microsoft Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - Setup Black as formatter
 - Setup format on save
 - Setup PyLint as linter
 
 ## Basic Python Syntax
+
 - Assign variable
 - Assign List (Array)
 - Assign Dict (Hash Table)
@@ -23,6 +32,7 @@ Python is a whitespace indented programming language
 - Print f strings
 
 ## Basic Script
+
 - Setup hashbang
 - Import modules
 - Write script
@@ -30,8 +40,9 @@ Python is a whitespace indented programming language
 - Run on both Windows and Linux
 
 ## Follow up reading
+
 - Common packages: Requests, Pandas, Rich, JupyterLab, PyTest
-- RealPython
-- Practical Business Python
-- Hitchikers Guide to Python
-- Pydocs
+- [RealPython](www.realpython.com)
+- [Practical Business Python](https://pbpython.com/)
+- [Hitchikers Guide to Python](https://docs.python-guide.org/)
+- [Python Docs](https://docs.python.org/3/)
